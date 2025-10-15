@@ -5,14 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       const details = button.nextElementSibling;
 
-      if (details && details.classList.contains('details')) {
-        details.classList.toggle('show');
+      document.querySelectorAll('.details.show').forEach((openDetail) => {
+        if (openDetail !== details) {
+          openDetail.classList.remove('show');
+          const btn = openDetail.previousElementSibling;
+          if (btn && btn.classList.contains('toggle-btn')) {
+            btn.textContent = '+ Détails';
+          }
+        }
+      });
 
-        button.textContent = details.classList.contains('show')
-          ? '− Masquer'
-          : '+ Détails';
-      }
+      const isVisible = details.classList.toggle('show');
+      button.textContent = isVisible ? '− Masquer' : '+ Détails';
     });
   });
 });
-
