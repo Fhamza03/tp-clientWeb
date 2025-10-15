@@ -104,7 +104,6 @@ footer nav ul li a {
     font-weight: bold;
     transition: 0.3s;
 }
-
 footer nav ul li a:hover {
     color: #fff;
 }
@@ -119,4 +118,35 @@ section p {
 i {
     margin-right: 8px;
     color: #ffd700;
+}
+
+
+.details {
+    display: none;
+    margin-top: 10px;
+    background-color: #4a4a4a;
+    padding: 10px 20px;
+    border-radius: 6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;}
+
+.details.show {
+    display: block;
+      max-height: 400px; /* hauteur suffisante pour le contenu */
+
+}
+.toggle-btn {
+    background-color: #ffd700;
+    color: #2f2f2f;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #ffdd57;
 }
