@@ -8,162 +8,168 @@
     <meta name="keywords" content="web,developer,resume"/>
     <meta name="author" content="Thomas">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="css/resume.css"/>
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body itemscope itemtype="https://schema.org/Person">
-    <header>
-        <img src="https://img.a.transfermarkt.technology/portrait/big/28003-1740766555.jpg?lm=1" alt="Photo de Thomas Fellah" itemprop="image">
-        <i class="icon-camera-retro"><h1 itemprop="name">Thomas FELLAH</h1></i>
-        <h2>
-            <span itemprop="address">2 RUE LA DEFENSE</span> <br>
-            <span itemprop="birthDate">2000-04-22</span> <br>
-            <a href="mailto:thomas.fellah@gmail.com" itemprop="email">thomas.fellah@gmail.com</a>
-        </h2>
-    </header>
 
-    <section>
-        <p itemprop="description">
-        Ingénieur logiciel en fin d’études, spécialisé en développement web full-stack.
-        Expérience sur des projets utilisant React pour le front-end et Spring Boot
-        pour le back-end ; maîtrise des concepts REST, WebSocket, et gestion des
-        bases de données via JPA/Hibernate. Bonnes pratiques : programmation
-        orientée objet, tests automatisés, et intégration continue. Recherche
-        un stage de fin d’études pour participer à la conception et au développement
-        d’applications web performantes et évolutives, tout en renforçant mes compétences
-        en architecture et collaboration d’équipe.
-        </p>
-    </section>
+    <div id="wrapper">
+        <header>
+            <img src="https://img.a.transfermarkt.technology/portrait/big/28003-1740766555.jpg?lm=1" alt="Photo de Thomas Fellah" itemprop="image">
+            <i class="icon-camera-retro"><h1 itemprop="name">Thomas FELLAH</h1></i>
+            <h2>
+                <span itemprop="address">2 RUE LA DEFENSE</span> <br>
+                <span itemprop="birthDate">2000-04-22</span> <br>
+                <a href="mailto:thomas.fellah@gmail.com" itemprop="email">thomas.fellah@gmail.com</a>
+            </h2>
+        </header>
 
-    <section>
-      <h2>Expérience professionnelle</h2>
+        <section>
+            <p itemprop="description">
+            Ingénieur logiciel en fin d’études, spécialisé en développement web full-stack.
+            Expérience sur des projets utilisant React pour le front-end et Spring Boot
+            pour le back-end ; maîtrise des concepts REST, WebSocket, et gestion des
+            bases de données via JPA/Hibernate. Bonnes pratiques : programmation
+            orientée objet, tests automatisés, et intégration continue. Recherche
+            un stage de fin d’études pour participer à la conception et au développement
+            d’applications web performantes et évolutives, tout en renforçant mes compétences
+            en architecture et collaboration d’équipe.
+            </p>
+        </section>
 
-      <article class="experience">
-        <h3>Stagiaire Développeur Full Stack</h3>
-        <p>CGI | Mars 2025 – Juillet 2025</p>
-        <p>Casablanca, Maroc</p>
+        <section>
+            <h2>Expérience professionnelle</h2>
+            <article class="experience">
+                <h3>Stagiaire Développeur Full Stack</h3>
+                <p>CGI | Mars 2025 – Juillet 2025</p>
+                <p>Casablanca, Maroc</p>
+                <button class="toggle-btn">+ Détails</button>
+                <ul class="details">
+                    <li>Développement d’une application web de messagerie en temps réel (React.js & Spring Boot).</li>
+                    <li>Implémentation de WebSocket pour la communication instantanée.</li>
+                    <li>Création d’API REST sécurisées avec JPA/Hibernate.</li>
+                    <li>Collaboration agile (Git, Jira) et documentation technique.</li>
+                </ul>
+            </article>
 
-        <button class="toggle-btn">+ Détails</button>
+            <article class="experience">
+                <h3>Développeur PHP – Projet académique</h3>
+                <p>EST Casablanca | Avril 2024 – Juin 2024</p>
+                <p>Casablanca, Maroc</p>
+                <button class="toggle-btn">+ Détails</button>
+                <ul class="details">
+                    <li>Conception d’une application de gestion d’entreprise selon MVC.</li>
+                    <li>Développement des modules produits, commandes et clients avec PHP et MySQL.</li>
+                    <li>Implémentation des contrôleurs et services CRUD.</li>
+                    <li>Rédaction des diagrammes UML et du rapport technique.</li>
+                </ul>
+            </article>
+        </section>
 
-        <ul class="details">
-          <li>Développement d’une application web de messagerie en temps réel (React.js & Spring Boot).</li>
-          <li>Implémentation de WebSocket pour la communication instantanée.</li>
-          <li>Création d’API REST sécurisées avec JPA/Hibernate.</li>
-          <li>Collaboration agile (Git, Jira) et documentation technique.</li>
-        </ul>
-      </article>
+        <section>
+            <h2>Compétences</h2>
+            <dl>
+                <dt>Langages de programmation :</dt>
+                <dd>
+                    <span data-description="Langage orienté objet robuste.">Java</span>,
+                    <span data-description="Langage serveur populaire pour le web.">PHP</span>,
+                    <span data-description="Langage puissant pour l’analyse et l’IA.">Python</span>,
+                    <span data-description="Langage du web côté client.">JavaScript</span>,
+                    <span data-description="Surcouche de JavaScript typée.">TypeScript</span>
+                </dd>
 
-      <article class="experience">
-        <h3>Développeur PHP – Projet académique</h3>
-        <p>EST Casablanca | Avril 2024 – Juin 2024</p>
-        <p>Casablanca, Maroc</p>
+                <dt>Frameworks &amp; Outils :</dt>
+                <dd>
+                    <span data-description="Framework Java pour créer des APIs.">Spring Boot</span>,
+                    <span data-description="Bibliothèque front-end moderne.">React.js</span>,
+                    <span data-description="Framework PHP pour le développement web.">Laravel</span>,
+                    <span data-description="Exécution JavaScript côté serveur.">Node.js</span>,
+                    <span data-description="Outil de conteneurisation.">Docker</span>
+                </dd>
 
-        <button class="toggle-btn">+ Détails</button>
+                <dt>Bases de données :</dt>
+                <dd>
+                    <span data-description="Système de gestion de base de données relationnelle.">MySQL</span>,
+                    <span data-description="Base de données relationnelle avancée.">PostgreSQL</span>,
+                    <span data-description="Base NoSQL orientée documents.">MongoDB</span>
+                </dd>
 
-        <ul class="details">
-          <li>Conception d’une application de gestion d’entreprise selon MVC.</li>
-          <li>Développement des modules produits, commandes et clients avec PHP et MySQL.</li>
-          <li>Implémentation des contrôleurs et services CRUD.</li>
-          <li>Rédaction des diagrammes UML et du rapport technique.</li>
-        </ul>
-      </article>
-    </section>
+                <dt>Outils DevOps :</dt>
+                <dd>
+                    <span data-description="Système de contrôle de version.">Git</span>,
+                    <span data-description="Plateforme CI/CD complète.">GitLab CI/CD</span>,
+                    <span data-description="Conteneurisation d’applications.">Docker</span>,
+                    <span data-description="Automatisation des builds/deploiements.">Jenkins</span>
+                </dd>
 
-    <section>
-      <h2>Compétences</h2>
-      <dl>
-        <dt>Langages de programmation :</dt>
-        <dd>
-          <span data-description="Langage orienté objet robuste.">Java</span>,
-          <span data-description="Langage serveur populaire pour le web.">PHP</span>,
-          <span data-description="Langage puissant pour l’analyse et l’IA.">Python</span>,
-          <span data-description="Langage du web côté client.">JavaScript</span>,
-          <span data-description="Surcouche de JavaScript typée.">TypeScript</span>
-        </dd>
+                <dt>Tests & Qualité :</dt>
+                <dd>
+                    <span data-description="Framework de tests unitaires Java.">JUnit</span>,
+                    <span data-description="Mocking pour les tests unitaires.">Mockito</span>,
+                    <span data-description="Mesure la couverture du code Java.">Jacoco</span>,
+                    <span data-description="Analyseur de qualité de code.">SonarQube</span>
+                </dd>
+            </dl>
 
-        <dt>Frameworks &amp; Outils :</dt>
-        <dd>
-          <span data-description="Framework Java pour créer des APIs.">Spring Boot</span>,
-          <span data-description="Bibliothèque front-end moderne.">React.js</span>,
-          <span data-description="Framework PHP pour le développement web.">Laravel</span>,
-          <span data-description="Exécution JavaScript côté serveur.">Node.js</span>,
-          <span data-description="Outil de conteneurisation.">Docker</span>
-        </dd>
+            <div id="tooltip" aria-hidden="true"></div>
+        </section>
 
-        <dt>Bases de données :</dt>
-        <dd>
-          <span data-description="Système de gestion de base de données relationnelle.">MySQL</span>,
-          <span data-description="Base de données relationnelle avancée.">PostgreSQL</span>,
-          <span data-description="Base NoSQL orientée documents.">MongoDB</span>
-        </dd>
+        <section id="autoevaluation">
+            <h2>Auto-évaluation des connaissances</h2>
+            <p>Évaluation de 1 étoile (basique) à 5 étoiles (expertise).</p>
+            <ul id="skills-eval"></ul>
+            
+            <canvas id="skillsChart" width="800" height="350"></canvas>
+            
+        </section>
 
-        <dt>Outils DevOps :</dt>
-        <dd>
-          <span data-description="Système de contrôle de version.">Git</span>,
-          <span data-description="Plateforme CI/CD complète.">GitLab CI/CD</span>,
-          <span data-description="Conteneurisation d’applications.">Docker</span>,
-          <span data-description="Automatisation des builds/deploiements.">Jenkins</span>
-        </dd>
+        <section>
+            <h2>Formation</h2>
+            <dl>
+                <dt>Master Développement Logiciel des Systèmes d’Information</dt>
+                <dd>Université de Bretagne Occidentale, Brest – 2025</dd>
+                <dt>Licence – Ingénierie Informatique</dt>
+                <dd>EST Casablanca, Maroc – Mention Très Bien – 2023</dd>
+            </dl>
+        </section>
 
-        <dt>Tests & Qualité :</dt>
-        <dd>
-          <span data-description="Framework de tests unitaires Java.">JUnit</span>,
-          <span data-description="Mocking pour les tests unitaires.">Mockito</span>,
-          <span data-description="Mesure la couverture du code Java.">Jacoco</span>,
-          <span data-description="Analyseur de qualité de code.">SonarQube</span>
-        </dd>
-      </dl>
+        <section>
+            <h2>Langues</h2>
+            <dl>
+                <dt>Français :</dt>
+                <dd>Courant</dd>
+                <dt>Anglais :</dt>
+                <dd>Intermédiaire avancé (B2)</dd>
+                <dt>Espagnole :</dt>
+                <dd>Langue maternelle</dd>
+            </dl>
+        </section>
 
-      <div id="tooltip" aria-hidden="true"></div>
-    </section>
+        <section>
+            <h2>Centres d’intérêt</h2>
+            <ul>
+                <li>Sport de combat</li>
+                <li>Football</li>
+                <li>Musculation</li>
+            </ul>
+        </section>
 
-    <section>
-      <h2>Formation</h2>
-      <dl>
-        <dt>Master Développement Logiciel des Systèmes d’Information</dt>
-        <dd>Université de Bretagne Occidentale, Brest – 2025</dd>
-
-        <dt>Licence – Ingénierie Informatique</dt>
-        <dd>EST Casablanca, Maroc – Mention Très Bien – 2023</dd>
-      </dl>
-    </section>
-
-    <section>
-      <h2>Langues</h2>
-      <dl>
-        <dt>Français :</dt>
-        <dd>Courant</dd>
-        <dt>Anglais :</dt>
-        <dd>Intermédiaire avancé (B2)</dd>
-        <dt>Espagnole :</dt>
-        <dd>Langue maternelle</dd>
-      </dl>
-    </section>
-
-    <section>
-      <h2>Centres d’intérêt</h2>
-      <ul>
-        <li>Sport de combat</li>
-        <li>Football</li>
-        <li>Musculation</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>© 2025 Thomas Fellah — Tous droits réservés.</p>
-      <nav>
-        <ul>
-          <li><a href="https://github.com/Thomasfellah" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://twitter.com/Thomasfellah" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-          <li><a href="https://www.flickr.com/photos/Thomasfellah" target="_blank" rel="noopener noreferrer">Flickr</a></li>
-          <li><a href="https://www.linkedin.com/in/Thomasfellah" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
-      </nav>
-    </footer>
-
-    <div id="wrapper"></div>
+        <footer>
+            <p>© 2025 Thomas Fellah — Tous droits réservés.</p>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/Thomasfellah" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://twitter.com/Thomasfellah" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.flickr.com/photos/Thomasfellah" target="_blank" rel="noopener noreferrer">Flickr</a></li>
+                    <li><a href="https://www.linkedin.com/in/Thomasfellah" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </footer>
+        
+    </div> 
     <script src="js/script.js"></script>
 </body>
 </html>

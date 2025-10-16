@@ -47,9 +47,11 @@ header h2 {
 }
 
 section {
+    margin-top: 30px; 
     margin-bottom: 30px;
     font-family: Arial, sans-serif;
-    margin: 40px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 section h2 {
@@ -178,9 +180,9 @@ dd span:hover {
   display: none;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.2s ease;
+  transition: opacity 0.3s ease, transform 0.2s ease; 
   max-width: 250px;
-  z-index: 1000;
+  z-index: 1000; 
   transform: scale(0.9);
 }
 
@@ -189,3 +191,30 @@ dd span:hover {
   transform: scale(1);
 }
 
+#skills-eval {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0; /* Ajout d'espace sous les étoiles */
+}
+
+#skills-eval li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.star {
+  color: gold;
+  font-size: 1.3rem;
+  margin-right: 2px;
+}
+
+#skillsChart {
+    display: block;
+    width: 100%; 
+    max-width: 800px;
+    height: auto;
+    background-color: #4a4a4a; 
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
